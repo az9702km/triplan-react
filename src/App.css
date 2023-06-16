@@ -1,0 +1,23 @@
+@tailwind components;
+
+@layer components {
+  .table-head th {
+    @apply py-2 px-3 text-sm font-semibold bg-slate-50 text-left
+  }
+
+  .table-head {
+    @apply border-b
+  }
+
+  .table-body td {
+    @apply p-3
+  }
+
+  .table-body tr:not(:last-child) {
+    @apply border-b
+  }
+
+  .table-body .table-section {
+    @apply py-1 text-sm font-medium bg-slate-50
+  }
+}

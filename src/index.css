@@ -1,0 +1,59 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer components {
+  .btn {
+    @apply py-1.5 px-3 inline-flex items-center gap-x-2 font-semibold rounded-md border border-transparent transition ease-in-out focus:outline-none focus:ring-2 focus:ring-opacity-75 disabled:opacity-60;
+  }
+
+  .btn-primary {
+    @apply bg-blue-500 text-white border-blue-500 hover:bg-blue-700 focus:ring-blue-400;
+  }
+
+  .btn-secondary {
+    @apply bg-slate-50 border-slate-300 hover:bg-slate-200 focus:ring-slate-400;
+  }
+
+  .btn-light-primary {
+    @apply bg-blue-100 text-blue-500 hover:bg-blue-500 hover:text-white focus:bg-blue-500 focus:text-white  disabled:hover:bg-blue-100 disabled:hover:text-blue-500
+  }
+
+  .btn-light-danger {
+    @apply bg-red-100 text-red-500 hover:bg-red-500 hover:text-white focus:bg-red-500 focus:text-white focus:ring-red-200 disabled:hover:bg-red-100 disabled:hover:text-red-500
+  }
+
+  .form-control {
+    @apply py-1.5 px-3 inline-flex items-center gap-x-4 rounded-md border border-slate-300 text-gray-900 placeholder:text-gray-400 focus:ring-2 focus:border-blue-500 focus:ring-inset focus:ring-blue-400 sm:text-sm sm:leading-6 outline-0 disabled:opacity-60 disabled:bg-slate-200;
+  }
+
+  .form-check {
+    @apply relative inline-flex items-center cursor-pointer
+  }
+
+  .form-check.form-check--sm .form-check__switch {
+    @apply w-9 h-5 after:h-4 after:w-4
+  }
+
+  .form-check .form-check__switch {
+    @apply w-11 h-6 bg-gray-200 rounded-full dark:bg-gray-700 after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all dark:border-gray-600
+  }
+
+  .form-check .form-check__label {
+    @apply ml-3 text-sm font-medium text-gray-900 dark:text-gray-300
+  }
+
+  .employee {
+    @apply flex items-start gap-x-4 p-4 rounded-lg border border-slate-200;
+  }
+}
+
+@layer utilities {
+
+  .passport-data .passport-data__title {
+    @apply text-gray-400 font-medium text-xs tracking-widest uppercase
+  }
+
+
+}
